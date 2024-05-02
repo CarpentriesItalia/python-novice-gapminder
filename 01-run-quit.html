@@ -416,7 +416,7 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How can I run Python programs?</li>
+<ul><li>Come faccio ad eseguire programmi Python?</li>
 </ul></div>
 </div>
 </div>
@@ -424,21 +424,22 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Launch the JupyterLab server.</li>
-<li>Create a new Python script.</li>
-<li>Create a Jupyter notebook.</li>
-<li>Shutdown the JupyterLab server.</li>
-<li>Understand the difference between a Python script and a Jupyter
+<ul><li>Avviare il server di JupyterLab.</li>
+<li>Creare un nuovo script Python.</li>
+<li>Creare un Jupyter notebook.</li>
+<li>Arrestare il server di JupyterLab.</li>
+<li>Capire la differenza tra uno script Python e un Jupyter
 notebook.</li>
-<li>Create Markdown cells in a notebook.</li>
-<li>Create and run Python cells in a notebook.</li>
+<li>Creare celle Markdown in un notebook.</li>
+<li>Creare ed eseguire celle Python in un notebook.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<p>To run Python, we are going to use <a href="https://jupyter.org/" class="external-link">Jupyter Notebooks</a> via <a href="https://jupyterlab.readthedocs.io/en/stable/" class="external-link">JupyterLab</a> for
-the remainder of this workshop. Jupyter notebooks are common in data
+<p>To run Python, we are going to use [Jupyter Notebooks][jupyter] via
+<a href="https://jupyterlab.readthedocs.io/en/stable/" class="external-link">JupyterLab</a>
+for the remainder of this workshop. Jupyter notebooks are common in data
 science and visualization and serve as a convenient common-denominator
 experience for running Python code interactively where we can easily
 view and share the results of our Python code.</p>
@@ -731,7 +732,7 @@ be most useful for your workflow?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>After creating the necessary tabs, you can drag one of the tabs to
 the center of a panel to move the tab to the panel; next you can
@@ -796,7 +797,7 @@ operation you performed.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Command mode has a grey border and Edit mode has a blue border. Use
 <kbd>Esc</kbd> and <kbd>Return</kbd> to switch between modes. You need
@@ -842,96 +843,25 @@ cell and you will be able to write in Markdown.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="markdown-does-most-of-what-html-does-">Markdown does most of what HTML does.<a class="anchor" aria-label="anchor" href="#markdown-does-most-of-what-html-does-"></a></h3>
-<table class="table"><caption>Showing some markdown syntax and its rendered output.</caption>
-<colgroup><col width="44%"><col width="55%"></colgroup><thead><tr class="header"><th>Markdown code</th>
-<th>Rendered output</th>
-</tr></thead><tbody><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code>*   Use asterisks
-*   to create
-*   bullet lists.</code></pre></td>
-<td>
-<p>
-</p>
-<ul><li>Use asterisks</li>
-<li>to create</li>
-<li>bullet lists.</li>
-</ul></td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code>1.   Use numbers
-1.   to create
-1.   bullet lists.</code></pre></td>
-<td>
-<p>
-</p>
-<ol style="list-style-type: decimal"><li>Use numbers</li>
-<li>to create</li>
-<li>numbered lists.</li>
-</ol></td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code>*  You can use indents
-  *  To create sublists
-  *  of the same type
-*  Or sublists
-  1. Of different
-  1. types</code></pre></td>
-<td>
-<p>
-</p>
-<ul><li>You can use indents
-<ul><li>To create sublists</li>
-<li>of the same type</li>
-</ul></li>
-<li>Or sublists
-<ol style="list-style-type: decimal"><li>Of different</li>
-<li>types</li>
-</ol></li>
-</ul></td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code><span><span class="co"># A Level-1 Heading</span></span></code></pre></td>
-<td>
-<p>
-</p>
-<h2 id="a-level-1-heading">A Level-1 Heading</h2>
-</td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code><span><span class="co">## A Level-2 Heading (etc.)</span></span></code></pre></td>
-<td>
-<p>
-</p>
-<h3 id="a-level-2-heading-etc.">A Level-2 Heading (etc.)</h3>
-</td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code>Line breaks
-don't matter.
-
-But blank lines
-create new paragraphs.</code></pre></td>
-<td>
-<p>
-</p>
-<p>Line breaks don’t matter.</p>
-<p>But blank lines create new paragraphs.</p>
-</td>
-</tr><tr class="odd"><td></td>
-<td></td>
-</tr><tr class="even"><td><pre><code>[Links](http://software-carpentry.org)
-are created with `[...](...)`.
-Or use [named links][data-carp].
-
-[data-carp]: http://datacarpentry.org</code></pre></td>
-<td>
-<p>
-</p>
-<p><a href="https://software-carpentry.org" class="external-link">Links</a> are created with
-<code>[...](...)</code>. Or use <a href="https://datacarpentry.org" class="external-link">named links</a>.</p>
-</td>
-</tr></tbody></table><div id="creating-lists-in-markdown" class="callout challenge">
+<p>Table: Showing some markdown syntax and its rendered output.</p>
+<p>+—————————————+————————————————+ | Markdown code | Rendered output |
++=======================================+================================================+
++—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | *   Use asterisks                     | -   Use asterisks                              | | *   to create                         | -   to create                                  | | *   bullet lists.                     | -   bullet lists.                              | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | 1.   Use numbers                      | 1.   Use numbers                               | | 1.   to create                        | 2.   to create                                 | | 1.   bullet lists.                    | 3.   numbered lists.                           | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | *  You can use indents                | - You can use indents                          | |   *  To create sublists               |   - To create sublists                         | |   *  of the same type                 |   - of the same type                           | | *  Or sublists                        | - Or sublists                                  | |   1. Of different                     |   1. Of different                              | |   1. types                            |   2. types                                     | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | # A Level-1 Heading                   | ## A Level-1 Heading                           | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | ## A Level-2 Heading (etc.)           | ### A Level-2 Heading (etc.)                   | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | Line breaks                           | Line breaks                                    | | don't matter.                         | don't matter.                                  | |                                       |                                                | | But blank lines                       | But blank lines                                | | create new paragraphs.                | create new paragraphs.                         | |</code>
+| | +—————————————+————————————————+ +—————————————+————————————————+ |
+<code>| &lt;p&gt;&lt;/p&gt;                                        | | [Links](http://software-carpentry.org)| [Links](https://software-carpentry.org)        | | are created with `[...](...)`.        | are created with `[...](...)`.                 | | Or use [named links][data-carp].      | Or use [named links][data_carpentry].          | |                                       |                                                | | [data-carp]: http://datacarpentry.org |                                                | |</code>
+| | +—————————————+————————————————+</p>
+<div id="creating-lists-in-markdown" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -956,7 +886,7 @@ this:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>This challenge integrates both the numbered list and bullet list.
 Note that the bullet list is indented 2 spaces so that it is inline with
@@ -983,11 +913,11 @@ the items of the numbered list.</p>
 <p>What is displayed when a Python cell in a notebook that contains
 several calculations is executed? For example, what happens when this
 cell is executed?</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="dv">7</span> <span class="op">*</span> <span class="dv">3</span></span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="dv">7</span> <span class="op">*</span> <span class="dv">3</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -997,13 +927,13 @@ cell is executed?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Python returns the output of the last calculation.</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="dv">3</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="dv">3</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1021,11 +951,11 @@ Markdown<a class="anchor" aria-label="anchor" href="#change-an-existing-cell-fro
 <p>What happens if you write some Python in a code cell and then you
 switch it to a Markdown cell? For example, put the following in a code
 cell:</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span> <span class="op">*</span> <span class="dv">7</span> <span class="op">+</span> <span class="dv">12</span></span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span> <span class="op">*</span> <span class="dv">7</span> <span class="op">+</span> <span class="dv">12</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre>
 </div>
 <p>And then run it with <kbd>Shift</kbd>+<kbd>Return</kbd> to be sure
 that it works as a code cell. Now go back to the cell and use
@@ -1040,16 +970,16 @@ might this be useful?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>The Python code gets treated like Markdown text. The lines appear as
 if they are part of one contiguous paragraph. This could be useful to
 temporarily turn on and off cells in notebooks that get used for
 multiple purposes.</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span> <span class="op">*</span> <span class="dv">7</span> <span class="op">+</span> <span class="dv">12</span> <span class="bu">print</span>(x)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span> <span class="op">*</span> <span class="dv">7</span> <span class="op">+</span> <span class="dv">12</span> <span class="bu">print</span>(x)</span></code></pre>
 </div>
 </div>
 </div>
@@ -1078,7 +1008,7 @@ and dollar sign, <code>$</code>, do?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6">Show me the solution</h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The notebook shows the equation as it would be rendered from LaTeX
 equation syntax. The dollar sign, <code>$</code>, is used to tell

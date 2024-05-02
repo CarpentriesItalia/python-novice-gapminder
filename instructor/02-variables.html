@@ -582,9 +582,9 @@ subscript.</li>
 <li>Indices are numbered from 0.</li>
 <li>Use the position’s index in square brackets to get the character at
 that position.</li>
-</ul><figure><img src="../fig/2_indexing.svg" alt="A line of Python code, print(atom_name[0]), demonstrates that using the zero index will output just the initial letter, in this case ‘h’ for helium." class="figure mx-auto d-block"><div class="figcaption">A line of Python code, print(atom_name[0]),
-demonstrates that using the zero index will output just the initial
-letter, in this case ‘h’ for helium.</div>
+</ul><figure><img src="../fig/2_indexing.svg" alt="A line of Python code, print(atom\_name0), demonstrates that using the zero index will output just the initial letter, in this case ‘h’ for helium." class="figure mx-auto d-block"><div class="figcaption">A line of Python code, print(atom\_name<span class="math display">\[0\]</span>), demonstrates that using the zero
+index will output just the initial letter, in this case ‘h’ for
+helium.</div>
 </figure><div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -911,33 +911,25 @@ of range? (i.e., try <code>species_name[0:20]</code> or
 </button>
 <div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
-<ol style="list-style-type: decimal"><li>
-<code>species_name[2:8]</code> returns the substring
-<code>'acia b'</code>
-</li>
-<li>
-<code>species_name[11:]</code> returns the substring
-<code>'folia'</code>, from position 11 until the end</li>
-<li>
-<code>species_name[:4]</code> returns the substring
+<ol style="list-style-type: decimal"><li><p><code>species_name[2:8]</code> returns the substring
+<code>'acia b'</code></p></li>
+<li><p><code>species_name[11:]</code> returns the substring
+<code>'folia'</code>, from position 11 until the end</p></li>
+<li><p><code>species_name[:4]</code> returns the substring
 <code>'Acac'</code>, from the start up to but not including position
-4</li>
-<li>
-<code>species_name[:]</code> returns the entire string
-<code>'Acacia buxifolia'</code>
-</li>
-<li>
-<code>species_name[11:-3]</code> returns the substring
+4</p></li>
+<li><p><code>species_name[:]</code> returns the entire string
+<code>'Acacia buxifolia'</code></p></li>
+<li><p><code>species_name[11:-3]</code> returns the substring
 <code>'fo'</code>, from the 11th position to the third last
-position</li>
-<li>
-<code>species_name[-5:-3]</code> also returns the substring
-<code>'fo'</code>, from the fifth last position to the third last</li>
-<li>If a part of the slice is out of range, the operation does not fail.
-<code>species_name[0:20]</code> gives the same result as
+position</p></li>
+<li><p><code>species_name[-5:-3]</code> also returns the substring
+<code>'fo'</code>, from the fifth last position to the third
+last</p></li>
+<li><p>If a part of the slice is out of range, the operation does not
+fail. <code>species_name[0:20]</code> gives the same result as
 <code>species_name[0:]</code>, and <code>species_name[:103]</code> gives
-the same result as <code>species_name[:]</code>
-</li>
+the same result as <code>species_name[:]</code></p></li>
 </ol></div>
 </div>
 </div>

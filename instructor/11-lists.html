@@ -752,15 +752,13 @@ list to string: gold</code></pre>
 </button>
 <div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
-<ol style="list-style-type: decimal"><li>
-<a href="https://docs.python.org/3/library/stdtypes.html#list" class="external-link"><code>list('some string')</code></a>
-converts a string into a list containing all of its characters.</li>
-<li>
-<a href="https://docs.python.org/3/library/stdtypes.html#str.join" class="external-link"><code>join</code></a>
+<ol style="list-style-type: decimal"><li><p><a href="https://docs.python.org/3/library/stdtypes.html#list" class="external-link"><code>list('some string')</code></a>
+converts a string into a list containing all of its characters.</p></li>
+<li><p><a href="https://docs.python.org/3/library/stdtypes.html#str.join" class="external-link"><code>join</code></a>
 returns a string that is the <em>concatenation</em> of each string
 element in the list and adds the separator between each element in the
 list. This results in <code>x-y-z</code>. The separator between the
-elements is the string that provides this method.</li>
+elements is the string that provides this method.</p></li>
 </ol></div>
 </div>
 </div>
@@ -800,15 +798,14 @@ negative indexing.)</li>
 <div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The program prints <code>m</code>.</p>
-<ol style="list-style-type: decimal"><li>Python interprets a negative index as starting from the end (as
+<ol style="list-style-type: decimal"><li><p>Python interprets a negative index as starting from the end (as
 opposed to starting from the beginning). The last element is
-<code>-1</code>.</li>
-<li>The last index that can safely be used with a list of N elements is
-element <code>-N</code>, which represents the first element.</li>
-<li>
-<code>del values[-1]</code> removes the last element from the
-list.</li>
-<li><code>values[:-1]</code></li>
+<code>-1</code>.</p></li>
+<li><p>The last index that can safely be used with a list of N elements
+is element <code>-N</code>, which represents the first element.</p></li>
+<li><p><code>del values[-1]</code> removes the last element from the
+list.</p></li>
+<li><p><code>values[:-1]</code></p></li>
 </ol></div>
 </div>
 </div>
@@ -850,13 +847,12 @@ collection?</li>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a>furn</span>
 <span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a>eniroulf</span></code></pre>
 </div>
-<ol style="list-style-type: decimal"><li>
-<code>stride</code> is the step size of the slice.</li>
-<li>The slice <code>1::2</code> selects all even-numbered items from a
-collection: it starts with element <code>1</code> (which is the second
+<ol style="list-style-type: decimal"><li><p><code>stride</code> is the step size of the slice.</p></li>
+<li><p>The slice <code>1::2</code> selects all even-numbered items from
+a collection: it starts with element <code>1</code> (which is the second
 element, since indexing starts at <code>0</code>), goes on until the end
 (since no <code>end</code> is given), and uses a step size of
-<code>2</code> (i.e., selects every second element).</li>
+<code>2</code> (i.e., selects every second element).</p></li>
 </ol></div>
 </div>
 </div>
